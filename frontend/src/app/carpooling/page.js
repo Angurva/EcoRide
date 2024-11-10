@@ -1,7 +1,12 @@
+import { Box, Container } from '@mui/material'
 import React from 'react'
 
 export default function Carpooling() {
   return (
-    <div>Carpooling</div>
+    <Box>
+      <Container maxWidth="lg">
+        Carpooling page
+      </Container>
+    </Box>
   )
 }
