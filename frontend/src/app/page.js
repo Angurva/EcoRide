@@ -25,10 +25,15 @@ const contents = [
 
 export default function Home() {
   return (
-      <Box>
+     <Box >
         <Image
           src={PictureHome}
           alt="photo road forest"
+          sizes="100vw"
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
         />
         <Container maxWidth="lg">
           <SearchBar/>
@@ -39,6 +44,6 @@ export default function Home() {
             )           
           })}
         </Container>
-      </Box>
+        </Box>
   );
 }

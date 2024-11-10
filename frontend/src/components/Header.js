@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/app/styles/Header.module.css';
+//import styles from '@/app/styles/Header.module.css';
 import { AppBar, Box, Container, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
 import Link from 'next/link';
@@ -35,9 +35,11 @@ const auth_pages = [
 
 export default function Header() {
   return (
+   
       <AppBar sx={{
         height:70,
         bgcolor:'#0388A6',
+        position:'sticky'
       }}>
         <Container maxWidth="lg">
           <Toolbar>         
@@ -79,6 +81,7 @@ export default function Header() {
             </Box>    
           </Toolbar>
         </Container> 
-      </AppBar>      
+      </AppBar>
+     
   )
 }

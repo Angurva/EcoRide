@@ -5,12 +5,13 @@ import React from 'react'
 export default function Footer() {
   return (
     <Box sx={{ 
-      bgcolor:'#efefef',
+      bgcolor:'#f9f9f9',
       bottom:0,
-      width:'100%'
+      width:'100%',
+      justifySelf:'end'
     }}>
       <Container maxWidth="lg" sx={{
-        height:80,
+        height:70,
         display:'flex',
         alignItems:'center',
       }}>

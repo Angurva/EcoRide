@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Carpooling() {
   return (
-    <Box>
+    <Box flexGrow={1}>
       <Container maxWidth="lg">
         Carpooling page
       </Container>

@@ -26,17 +26,11 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Box sx={{display:'flex', flexDirection:'column',minHeight:'100vh'}}> 
-          <Box sx={{position:'sticky'}}> 
-            <Header/>
-          </Box>      
+       
+          <Header/>
          
-        
-            {children}
-          
-          <Box sx={{ justifySelf:'end'}}>
-            <Footer/>
-          </Box>
-          
+          {children}
+          <Footer/>         
         </Box>        
       </body>
     </html>
