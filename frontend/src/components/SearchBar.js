@@ -23,6 +23,7 @@ export default function SearchBar() {
     date:null
   })
 
+  /**function event on change to input(textfield) field controlled */
   const handleChange = (e)=>{
     const {name, value} = e.target;
     setSearch({...search,[name]: value })

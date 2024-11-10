@@ -32,6 +32,7 @@ export default function Home() {
         />
         <Container maxWidth="lg">
           <SearchBar/>
+          {/** list content for homepage and for each content create a Card with <CardPicture/> and transmitting props */}   
           { contents.map((content)=>{       
             return(
              <CardPicture key={content.id} content={content}/>
