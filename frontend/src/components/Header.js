@@ -35,7 +35,7 @@ const auth_pages = [
 
 export default function Header() {
   return (
-      <AppBar position='sticky' sx={{
+      <AppBar sx={{
         height:70,
         bgcolor:'#0388A6',
       }}>
