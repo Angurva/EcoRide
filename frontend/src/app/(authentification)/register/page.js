@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import style from '../../styles/Login.module.css'
 
+
+/** register page: function to create a new account  */
 export default function Register() {
 
   /**object to store data enter 'input'*/ 
@@ -13,6 +15,7 @@ export default function Register() {
     password:"",
     confirm_password:"",
   }) 
+  const [errorPwd,setErrorPwd] = useState()
 
   /**function to store each input */
   const handleChange = (e) =>{
@@ -25,7 +28,13 @@ export default function Register() {
     e.preventDefault();
     //code to send POST data json to server api
     //.....
-    console.log(JSON.stringify(accountRegister))
+    if(accountRegister.password !== accountRegister.confirm_password)
+    {
+
+    }else{
+      console.log(JSON.stringify(accountRegister))   
+    }
+   
   }
 
 
