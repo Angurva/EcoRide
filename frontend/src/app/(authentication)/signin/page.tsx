@@ -1,7 +1,9 @@
 "use client"
-import { Box, Button, Card, CardActions, CardContent, CardHeader, Divider, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, TextField, Typography } from '@mui/material';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { GiTreeBranch } from "react-icons/gi";
+import { lightGreen } from '@mui/material/colors';
 //import style from '../../styles/Login.module.css'
 
 export default function SignIn() {
@@ -37,9 +39,13 @@ export default function SignIn() {
           }}
         >
           <CardHeader
-            title="Ecoride"
-            subheader="Connection"
-            sx={{}}
+            title="Sign In"
+            subheader="Connect to your member space "
+            /*action={
+              <IconButton disabled>
+                <GiTreeBranch color={lightGreen['A200']}/>
+              </IconButton>
+            }*/
           />
           <Divider flexItem sx={{mx:2}}></Divider>
           <CardContent 

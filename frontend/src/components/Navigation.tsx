@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <AppBar sx={{
         position:'sticky',
-        height:'60px',
+        height:'80px',
         bgcolor:lightBlue[700],
     }}>
         <Container maxWidth='lg' sx={{height:'100%'}}>
