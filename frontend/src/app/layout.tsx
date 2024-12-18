@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Box } from "@mui/material";
+import Navigation from "@/components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +27,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Box
+          sx={{
+            width:'100vw',
+            height:'100vh',
+            display:'flex',
+            flexDirection:'column'
+          }}
+        >
+          <Navigation/>
+          <Box sx={{
+            flexGrow:1,
+            display:'flex',
+          }}>
+            {children}
+          </Box>
+          
+        </Box>
+        
       </body>
     </html>
   );
