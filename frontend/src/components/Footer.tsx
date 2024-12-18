@@ -6,18 +6,17 @@ export default function Footer() {
   return (
     <Box component='footer' sx={{
         display:'flex',
-        height:'40px',
         alignItems:'center',
         bgcolor:lightBlue[700],
         color:'white'
 
     }}> 
-        <Container maxWidth='lg'>
+        <Container maxWidth='lg' sx={{ height:'100%'}}>
             <Box sx={{
-            display:'flex',
-            alignItems:'center',
-            gap:2
-            
+                display:'flex',
+                alignItems:'center',
+                gap:2,
+                py:2.5
             }}>
                 <Typography>
                     <Link href='/mentions-legales' sx={{ 
