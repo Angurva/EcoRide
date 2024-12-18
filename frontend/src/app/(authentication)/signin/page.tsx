@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 //import style from '../../styles/Login.module.css'
 
-export default function Login() {
+export default function SignIn() {
 
   const [account,setAccount] = useState({
     username:"",
