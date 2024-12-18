@@ -40,6 +40,7 @@ export default function RootLayout({
           <Box sx={{
             flexGrow:1,
             display:'flex',
+            
           }}>
             {children}
           </Box>
