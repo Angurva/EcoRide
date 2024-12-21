@@ -36,7 +36,7 @@ export default function Home() {
             height: 'auto',
           }}
         />
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <SearchBar/>
           {/** list content for homepage and for each content create a Card with <CardPicture/> and transmitting props */}   
           { contents.map((content)=>{       

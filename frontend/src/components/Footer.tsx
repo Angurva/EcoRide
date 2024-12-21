@@ -11,7 +11,7 @@ export default function Footer() {
         color:'white'
 
     }}> 
-        <Container maxWidth='lg' sx={{ height:'100%'}}>
+        <Container maxWidth='xl' sx={{ height:'100%'}}>
             <Box sx={{
                 display:'flex',
                 alignItems:'center',

@@ -5,7 +5,7 @@ export default function CardPicture({content}:{content:any}) {
   return (
     content.id % 2 //condition pour orienter l'image soit a droite soit à gauche avec un modulo sur l'id
     ? // si le modulo est vrai alors on oriente l'image à droite
-    <Card sx={{ my:8, display:'flex' }}>
+    <Card sx={{ my:8, display:'flex',mx:10 }}>
         <CardContent sx={{display:'flex', flexDirection:'column', alignItems:'center', flexGrow:1}}>
             <Typography variant='h5' sx={{ }}>{content.title}</Typography>
             <Typography variant='subtitle1' sx={{ }}>{content.subtitle}</Typography>
@@ -18,7 +18,7 @@ export default function CardPicture({content}:{content:any}) {
         />  
     </Card>
     : //sinon l'image est à gauche
-    <Card sx={{ my:8, display:'flex' }}>
+    <Card sx={{ my:8, display:'flex',mx:10}}>
         <CardMedia
             component="img"
             sx={{ width:400 }}

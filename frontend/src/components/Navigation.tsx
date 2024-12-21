@@ -26,7 +26,7 @@ export default function Navigation() {
         height:'80px',
         bgcolor:lightBlue[700],
     }}>
-        <Container maxWidth='lg' sx={{height:'100%'}}>
+        <Container maxWidth='xl' sx={{height:'100%'}}>
             <Box sx={{ 
                 height:'100%',
                 display:'flex',
