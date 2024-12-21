@@ -4,12 +4,12 @@ import { Box, Container, Divider, Grid2 as Grid, Typography, Button, Paper } fro
 
 
 import React, { useState } from 'react'
-import Driver from '@/components/DetailsCarpooling/Driver';
-import Travel from '@/components/DetailsCarpooling/Travel';
-import Options from '@/components/DetailsCarpooling/Options';
-import Favourites from '@/components/DetailsCarpooling/Favourites';
+import Driver from '@/components/CarpoolingPage/DetailsCarpooling/Driver';
+import Travel from '@/components/CarpoolingPage/DetailsCarpooling/Travel';
+import Options from '@/components/CarpoolingPage/DetailsCarpooling/Options';
+import Favourites from '@/components/CarpoolingPage/DetailsCarpooling/Favourites';
 
-export default function DetailsCarpooling({params}) {
+export default function DetailsCarpooling() {
 
     const [carpooling, setCarpooling] = useState({
         pseudo:'Tartanpion',
