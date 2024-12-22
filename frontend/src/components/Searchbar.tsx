@@ -13,6 +13,7 @@ import 'dayjs/locale/fr';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { lightBlue } from '@mui/material/colors';
 
 export default function SearchBar() {
 
@@ -69,7 +70,7 @@ export default function SearchBar() {
             }}
           />
         </LocalizationProvider>
-        <Button variant="contained" type='submit' size="small">
+        <Button variant="contained" type='submit' size="small" sx={{bgcolor:lightBlue[700]}}>
             Search
         </Button>
     </Box>

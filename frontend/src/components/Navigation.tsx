@@ -1,6 +1,6 @@
 import { AppBar, Box, Container, Link, Typography } from '@mui/material'
 import React from 'react'
-import { lightBlue,lightGreen, lime } from '@mui/material/colors'
+import { lightBlue,lightGreen, green, lime } from '@mui/material/colors'
 import { GiTreeBranch } from "react-icons/gi";
 import { HiHome } from "react-icons/hi2";
 import { IoIosCar } from "react-icons/io";
@@ -38,7 +38,7 @@ export default function Navigation() {
                     gap:2,
                     fontSize:'2.2rem'
                     }}>
-                        <GiTreeBranch color={lightGreen['A200']}/>
+                        <GiTreeBranch color={lime['A700']}/>
                         <Typography sx={{
                             fontSize:'2rem',
                             letterSpacing:3,
@@ -57,7 +57,7 @@ export default function Navigation() {
                                 fontSize:'1.2rem',
                                 textDecoration:'none',
                                 '&:hover':{
-                                    color: lightGreen['A200']
+                                    color: lime['A700']
                                 }     
                             }}>
                                 <item.icon/>
@@ -91,7 +91,7 @@ export default function Navigation() {
                                         fontSize:'1rem',
                                         fontWeight:500,
                                         '&:hover':{
-                                            color: lightGreen['A200']
+                                            color: lime['A700']
                                         }    
                                     }
                                     : {
@@ -100,7 +100,7 @@ export default function Navigation() {
                                         fontWeight:700,
                                         fontSize:'1rem',
                                         '&:hover':{
-                                            color: lightGreen['A200']
+                                            color: lime['A700']
                                         }    
                                     }
                                 }>

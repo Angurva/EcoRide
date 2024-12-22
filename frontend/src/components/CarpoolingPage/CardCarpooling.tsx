@@ -5,6 +5,7 @@ import { PiClockLight, PiClockCountdownLight, PiSeatbeltLight, PiClockCounterClo
 import React, { useState } from 'react'
 import Link from 'next/link';
 import sxCompose from 'mui-sx';
+import { blueGrey, grey, lightBlue, blue, teal, cyan, yellow, amber,lime } from '@mui/material/colors';
 
 export default function CardCarpooling({carpoolingTrip}:{carpoolingTrip:any}) {
 
@@ -24,7 +25,11 @@ export default function CardCarpooling({carpoolingTrip}:{carpoolingTrip:any}) {
   return (
     <Card sx={{mb:2}}>
         <Link href={`/carpooling/${carpooling.id} `}>
-        <Grid container spacing={1} sx={(carpooling.id%2) ? { bgcolor:"#d0e0e3"} : { bgcolor:"#eeeeee"} }>
+        <Grid 
+            container spacing={1} 
+            sx={(carpooling.id%2) 
+                ? { bgcolor:blueGrey[50], '&:hover': {bgcolor:blueGrey[100], transition:"ease-in-out 0.5s"}} 
+                : { bgcolor:grey[50], '&:hover':{bgcolor:grey[300], transition:"ease-in-out 0.5s"}} }>
             <Grid size={3} sx={{}}>
                 <Stack justifyContent={'center'} alignItems='start' sx={{}}>
                     
