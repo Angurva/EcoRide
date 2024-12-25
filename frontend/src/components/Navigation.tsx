@@ -5,6 +5,7 @@ import { GiTreeBranch } from "react-icons/gi";
 import { HiHome } from "react-icons/hi2";
 import { IoIosCar } from "react-icons/io";
 import { FaMailBulk } from "react-icons/fa";
+import { MdSpaceDashboard } from "react-icons/md";
 
 
 export default function Navigation() {
@@ -70,6 +71,25 @@ export default function Navigation() {
                         </Box>
                     ))
                 }
+                    <Box component='li' sx={{ display:'flex'}}>
+                        <Link href="/workspace" sx={{ 
+                                    display:'flex',
+                                    alignItems:'center',
+                                    color:'white',
+                                    gap:1,
+                                    fontSize:'1.2rem',
+                                    textDecoration:'none',
+                                    '&:hover':{
+                                        color: lime['A700']
+                                    }     
+                                }}>
+                                    <MdSpaceDashboard/>
+                                    <Typography sx={{ 
+                                    fontSize:'1.2rem' ,
+                                    fontWeight:700
+                                }}>Workspace</Typography>
+                        </Link>
+                    </Box>
                 </Box>
                 <Box sx={{
                     ml:'auto',
