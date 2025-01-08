@@ -11,7 +11,7 @@ export default function Workspace() {
   return (
     <Box sx={{ flexGrow:1 }}> 
         <Container maxWidth='xl'>
-              { role === 'user' && <UserWorkspace/>}
+              { (role === 'passager' || role === 'driver') && <UserWorkspace/>}
               { role === 'admin' && <AdministratorWorkspace/>}
               { role === 'employee' && <EmployeeWorkspace/>}
         </Container>
